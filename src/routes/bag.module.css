@@ -1,0 +1,51 @@
+.bag_items_container {
+  display: inline-block;
+  width: 100%;
+  position: initial;
+  justify-content: space-around;
+  padding-right: 20px;
+  border-right: 1px solid #eaeaec;
+  padding-top: 32px;
+  color: #282c3f;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+
+}
+
+.bag_page {
+  width: 100%;
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 12.5%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.bag_summary {
+  /* vertical-align: top; */
+  display: inline-block;
+  justify-content: right;
+  width: 80%;
+  margin-top: 100px;
+  padding: 24px 0 0 16px;
+  color: #282c3f;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+@media (min-width:320px) and (max-width:500px) {
+  .bag_page {
+    gap: 0px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+}
