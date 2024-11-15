@@ -13,7 +13,7 @@ function Fetchitem() {
     const controller = new AbortController();
     const signal = controller.signal;
 
-    fetch("http://localhost:3001/items", { signal })
+    fetch("https://myntra-backend-mine.onrender.com/items", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         dispatch(itemsAction.addInitialitem(items[0]));
